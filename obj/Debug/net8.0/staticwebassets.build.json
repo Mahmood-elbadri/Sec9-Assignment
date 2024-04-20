@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "w5n2ctOv0XA7XooNryVdTHHxzfA6C5IkVRxDAg6raUg=",
+  "Source": "WebApplication5",
+  "BasePath": "_content/WebApplication5",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApplication5\\wwwroot",
+      "Source": "WebApplication5",
+      "ContentRoot": "C:\\Users\\mahmo\\RiderProjects\\WebApplication5\\WebApplication5\\wwwroot\\",
+      "BasePath": "_content/WebApplication5",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\mahmo\\RiderProjects\\WebApplication5\\WebApplication5\\wwwroot\\StyleSheet.css",
+      "SourceId": "WebApplication5",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mahmo\\RiderProjects\\WebApplication5\\WebApplication5\\wwwroot\\",
+      "BasePath": "_content/WebApplication5",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

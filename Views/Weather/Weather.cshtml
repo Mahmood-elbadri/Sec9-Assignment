@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Weather";
+}
+@model Weather
+@{
+    string GetClass(int? temp)
+    {
+        if (temp < 44)
+        {
+            return "blue-back";
+        }
+        else if (temp > 44 && temp < 75)
+        {
+            return "green-back";
+        }
+        else
+        {
+            return "orange-back";
+        }
+    }
+}
+
+<div class="box cursor-pointer w-30 @GetClass(Model.TemperatureFahrenheit)">
+    <div class="flex-borderless">
+        <div class="w-50">
+            <h2>@Model.CityName</h2>
+            <h4 class="text-dark-grey">@Model.DateAndTime.Value</h4>
+            <a href="/" class="margin-top">Back To Home</a>
+        </div>
+        <div class="w-50 border-left">
+            <h1 class="margin-left">
+                @Model.TemperatureFahrenheit <sup class="text-grey">&#8457</sup>
+            </h1>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+@{
+    string GetClass(int? temp)
+    {
+        if (temp < 44)
+        {
+            return "blue-back";
+        }
+        else if (temp > 44 && temp < 75)
+        {
+            return "green-back";
+        }
+        else
+        {
+            return "orange-back";
+        }
+    }
+}
+
+@foreach (Weather city in Model)
+{
+    <div class="box cursor-pointer w-30 @GetClass(city.TemperatureFahrenheit.Value)">
+        <div class="flex-borderless">
+            <div class="w-50">
+                <h2>@city.CityName</h2>
+                <h4 class="text-dark-grey">@city.DateAndTime</h4>
+                <a href="~/weather/@city.CityUniqueCode" class="margin-top">Details</a>
+            </div>
+            <div class="w-50 border-left">
+                <h1 class="margin-left">
+                    @city.TemperatureFahrenheit <sup class="text-grey">&#8457</sup>
+                </h1>
+            </div>
+        </div>
+    </div>
+}
